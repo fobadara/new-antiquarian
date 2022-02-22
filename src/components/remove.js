@@ -1,15 +1,16 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { consumeApi, removeBook } from '../redux/books/books';
 
 const RemoveButton = (props) => {
   const { id } = props;
+  const remove = {
+    method: 'DELETE', itemId: id, body: JSON.stringify({ item_id: id }), actionCreator: removeBook,
+  };
   const dispatch = useDispatch();
 
   const removeBookFromStore = () => {
-    if (id) {
-      dispatch(removeBook(id));
-    }
+    dispatch(consumeApi(remove));
   };
 
   return (
