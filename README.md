@@ -34,12 +34,16 @@ To get a local copy up and running follow these simple example steps.
 ```bash 
 git clone https://github.com/fobadara/antiquarian.git
 ```
+
+> Move into the directory by entering this  command
+```
+cd antiquarian
+```
 > Make sure you install the dependencies by runing this command
 
 ```bash
 npm install
 ```
-
 
 > View it in your browser by running this command
 
