@@ -36,7 +36,7 @@ const Books = ({ consumeApi }) => {
               {value[1][0].title}
               {' '}
             </div>
-            <div className="med-font" style={{ color: '#4386bf' }}>
+            <div style={{ fontSize: '0.875rem', color: '#4386bf' }}>
               unknown
               {' '}
             </div>
@@ -54,17 +54,19 @@ const Books = ({ consumeApi }) => {
   }
 
   return (
-    <div className="Home">
-      {loading && <h2>Loading...</h2>}
-      {error && !loading && <h2>{error}</h2>}
-      {status && !error && <h2>{status}</h2>}
-      {books.length === 0 && !error && <h2>The store is currently empty. Please add a book.</h2>}
-      {books && (
-        <>
-          {books}
-          <AddBook />
-        </>
-      )}
+    <div className="home flex">
+      <div className="border">
+        {loading && <h2>Loading...</h2>}
+        {error && !loading && <h2>{error}</h2>}
+        {status && !error && <h2>{status}</h2>}
+        {books.length === 0 && !error && <h2>The store is currently empty. Please add a book.</h2>}
+        {books && (
+          <>
+            {books}
+            <AddBook />
+          </>
+        )}
+      </div>
     </div>
   );
 };
