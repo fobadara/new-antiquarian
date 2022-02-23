@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto+Slab:wght@100;200;300;400;800;900&display=swap");
+
+/* General style */
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  background-color: #f5f6fa;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
+
+.section {
+  border-top: solid 1px #e8e8e8;
+  background-color: #fff;
+  margin-top: 0.1em;
+  padding-top: 0.2em;
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 2em;
+  margin-top: 1.4em;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+input,
+select {
+  height: 1.6em;
+}
+
+.blue-btn {
+  width: 11.5rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  height: 2em;
+  background: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 0.2em;
+  margin-bottom: 1em;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.home {
+  justify-content: center;
+}
+
+.border {
+  border: solid rgba(15, 15, 15, 0.1) 1px;
+  width: 90%;
+  padding: 2em 0 3em;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+  margin-top: 0.1em;
+}
+
+.cont-header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 2.8em;
+}
+
+.container-2 {
+  border-radius: 4px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.sec1-btn {
+  color: #4386bf;
+  border: none;
+  background-color: #fff;
+  margin: 0 0.1em;
+}
+
+.med-font {
+  width: 100%;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.padding-1 {
+  padding-top: 1em;
+  margin-left: 0.3em;
+}
+
+.company-logo {
+  text-decoration: none;
+  color: blue;
+}
+
+.company-logo:active {
+  color: blue;
+}
+
+/* Styling for completed */
+.progress-circle {
+  stroke-dasharray: 189;
+  stroke-dashoffset: 189;
+}
+
+#progress {
+  padding-left: -2em;
+  border-left: solid thin rgba(0, 0, 0, 0.05);
+}
