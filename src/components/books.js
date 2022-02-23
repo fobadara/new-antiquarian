@@ -27,7 +27,7 @@ const Books = ({ consumeApi }) => {
     books = booksReducer.data.map((value) => (
       <div className="container section" key={value[0]}>
         <div className="responsive-grid container-2">
-          <div className="" id="book-info">
+          <div id="book-info">
             <div style={{ color: 'rgba(12, 12, 12, 0.5)', fontWeight: 'bold', fontSize: '0.8em' }}>
               {value[1][0].category}
               {' '}

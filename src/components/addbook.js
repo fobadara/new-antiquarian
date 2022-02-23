@@ -40,9 +40,9 @@ const AddBook = () => {
     <div className="container section" style={{ marginBottom: '1em' }}>
       <h2 style={{ opacity: '0.5' }}>Add New Book</h2>
       <form style={{}} className="flex" action="#">
-        <input type="text" name="title" id="title" style={{ flexGrow: 1 }} onChange={handleChange} placeholder="Book title" required />
-        <select name="category" id="category" style={{ margin: '0 1em' }} defaultValue="Select genre" onChange={handleChange} required>
-          <option value="default" hidden>Select genre</option>
+        <input type="text" name="title" id="title" style={{ flexGrow: 0.6 }} onChange={handleChange} placeholder="Book title" required />
+        <select name="category" id="category" style={{ flexGrow: 0.2, margin: '0 1em' }} defaultValue="Select genre" onChange={handleChange} required>
+          <option value="default" hidden>Category</option>
           <option value="crime">Crime</option>
           <option value="fantasy">Fantasy</option>
           <option value="fiction">Fiction</option>
@@ -51,7 +51,7 @@ const AddBook = () => {
           <option value="history">History</option>
           <option value="horror">Horror</option>
         </select>
-        <button className="blue-btn" type="submit" onClick={handleSubmit}>
+        <button className="blue-btn" type="submit" style={{ flexGrow: 0.2 }} onClick={handleSubmit}>
           Add Book
         </button>
       </form>

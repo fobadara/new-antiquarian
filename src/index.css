@@ -36,8 +36,8 @@ code {
 }
 
 .icon {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   border: solid thin rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   margin: 2em;
@@ -68,7 +68,7 @@ select {
 }
 
 .container-2 {
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-right: 1em;
 }
