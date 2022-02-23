@@ -40,7 +40,7 @@ const AddBook = () => {
     <div className="container section" style={{ marginBottom: '1em' }}>
       <h2 style={{ opacity: '0.5' }}>Add New Book</h2>
       <form style={{}} className="flex" action="#">
-        <input type="text" name="title" id="title" style={{ height: '2em', flexGrow: 0.6 }} onChange={handleChange} placeholder="Book title" required />
+        <input type="text" name="title" id="title" style={{ height: '2em', flexGrow: 1 }} onChange={handleChange} placeholder="Book title" required />
         <select
           name="category"
           id="category"
@@ -64,7 +64,7 @@ const AddBook = () => {
           className="blue-btn"
           type="submit"
           style={{
-            margin: 0, width: '4em', height: '2.2em', flexGrow: 0.1,
+            margin: 0, width: '4.5em', height: '2.2em', flexGrow: 0.1,
           }}
           onClick={handleSubmit}
         >
